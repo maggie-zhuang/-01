@@ -4,15 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #header{
+            background-color: orange;
+            height: 100px;
+        }
+        #nav{
+            background-color: deeppink;
+            height: 25px;
+            margin-top: 5px;
+        }
+        #aside{
+            background-color: pink;
+            width: 250px;
+            height: 350px;
+            margin-top: 5px;
+            position:relative;
+            right: 275px;
+        }
+        #article{
+            background-color: deepskyblue;
+            width: 545px;
+            height: 350px;
+            margin-top: 5px;
+            margin-left: 5px;
+            position: fixed;;
+            left:618px;
+            top:138px;
+        }
+        #section{
+            background-color: yellow;
+            width: 535px;
+            height: 75px;
+            margin-top: 5px;
+            position: fixed;
+            left:628px;
+            top:408px;
+        }
+        #footer{
+            background-color: darkseagreen;
+            height: 135px;
+            margin-top: 5px;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
     <center>
-        <header style="color: orange;"></header>
-        <nav style="color: deeppink;"></nav>
-        <aside style="color: pink;"></aside>
-        <article style="color: deepskyblue;"></article>
-        <section style="color: yellow;"></section>
-        <footer style="color: darkseagreen;"></footer>
+        <div id="container" style="width:800px;height: 600px;">
+            <div id=header></div>
+            <div id=nav></div>
+            <div id=aside></div>
+            <div id=article></div>
+            <div id=section></div>
+            <div id=footer></div>
+        </div>       
     </center>
         
     
