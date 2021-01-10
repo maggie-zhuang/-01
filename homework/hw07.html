@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新冠肺炎</title>
+    <link rel="icon" href="covid-19.ico" type="image/x-icon">
+    <style>
+        #dp{
+            left: 0px;
+            width: 50%;
+            height: 0px;
+        }
+        #a1{
+            align-content: center;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightslategray;
+            width: 100%;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: rgb(99, 96, 96);
+        }
+        .p{
+            color: white;
+            font-size: 15px;
+            width: 10%;
+        }
+        .o{
+            color: black;
+            font-size: 15px;
+            width: 10%;
+            background-color: #fff;
+        }
+        #u{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 9999;
+        }
+        #content{
+            padding-bottom: 0px;
+        }
+        #footer{
+            height: 110px; /*設定footer本身高度*/
+            background-color:rgb(234, 234, 234);
+            border-top: 2px darkgrey solid;
+            text-align:center;
+        }
+        .wrapper {
+          min-height: 100%; /*外層高度100%*/
+          margin-bottom: -50px; /*隨footer高度需做調整*/
+        }
+        html, body {
+          height: 100%; /*外層高度100%*/
+          margin: 0;
+        }
+        #flex{
+            padding: 8px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(234, 234, 234); margin-top: 45px;">
+    <div id="wapper">
+        <div id="content">
+            <div id="u">
+                <ul>
+                    <li><a href="hw07.html">COVID-19</a></li>
+                    <li><a href="https://enwubaby.github.io/enwu/Taiwan1.html">Taiwan</a></li>
+                    <li><a href="#VR">Other</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                </ul>
+            </div>
+            <div id="flex">
+                <div>
+                    <div id="dp">
+                        <script>
+                            i = 0;
+                            HtmlStr = new Array(); 
+                            HtmlStr[0] = '<img src="Coronavirus1.jpg" height="450px">;2000'; 
+                            HtmlStr[1] = '<img src="Coronavirus2.jpg" height="450px">;2000'; 
+                            HtmlStr[2] = '<img src="Coronavirus3.jpg" height="450px">;2000';
+                            Max = HtmlStr.length-1;
+                            function star(Str){
+                              dp.innerHTML = Str;
+                              if(i < Max)
+                                  i++;
+                              else
+                                  i = 0;
+                              ToStop();
+                            }
+                            function ToPlay(){
+                              StrTmpe = HtmlStr[i].split(";");
+                              timeout = setTimeout("star(StrTmpe[0])",StrTmpe[1])
+                            }
+                            function ToStop(){
+                              clearTimeout(timeout);
+                              ToPlay();
+                            }
+                            ToPlay();
+                        </script>
+                    </div>
+                    <div style="position: relative;left: 825px;top: 0px;width: 45%;margin: 0px;height: 450px;">
+                        <p style="color:black;margin: 0px;text-align: center;font-size: 75px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">COVID-19</p>
+                        <p style="color: black;font-size: 20px;margin: 5px;">
+                            嚴重特殊傳染性肺炎疫情，是一次由嚴重急性呼吸道症候群冠狀病毒2型（SARS-CoV-2）的
+                            嚴重特殊傳染性肺炎（COVID-19）所引發的全球大流行疫情。疫情最初在2019年12月於中華人民
+                            共和國湖北省武漢市被發現，隨後在2020年初迅速擴散至全球多國，逐漸變成一場全球性大瘟疫。
+                            截至2021年1月9日，全球已有191個國家和地區累計報告逾0.89億名確診個案，其中逾191.6萬人因而
+                            死亡，是人類歷史上致死人數最多的流行病之一。世界各國對該病病死率的估計值差異甚大，截止
+                            2020年12月30日，多數國家該病的觀測病死率在0.5%-5.0%之間。目前研究表明，嚴重特殊傳染性肺炎
+                            最早可能於2019年10月至11月進入人類社會生活並開始傳播，而目前明確已知的
+                            首宗感染個案於2019年12月1日在武漢市發病。首位前往醫院就診的患者可能出現於12月12日。
+                            12月26日，武漢市呼吸與重症醫學科醫生張繼先最早發現和上報此不明原因肺炎，並懷疑該病屬傳染病。</p>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <div style="position: relative; top: 8px;height: 285px;width: 100%;">
+                    <a href="https://covid-19.nchc.org.tw/"><img src="list.png" width="45%" left="0px"></a>
+                    <a href="https://covid-19.nchc.org.tw/"><img src="list2.png" width="45%" ></a>
+                </div>
+                <div style="color: black;font-size: 35px;font-family: 微軟正黑體;"><p style="margin-top: 5px;margin-bottom: 5px;">COVID-19 疫情紀錄表單</p></div>
+                <div style="width: 60%;padding-left: 5%;padding-right: 5%;padding-top: 10px;padding-bottom: 10px;">
+                    <table border="1" align="center" cellpadding="10" cellspacing="0">
+                        <tr style="background-color: lightslategrey;">
+                            <td class="p">國家</td>
+                            <td class="p">檢核日期'</td>
+                            <td class="p">確診數</td>
+                            <td class="p">死亡數</td>
+                            <td class="p">解除隔離數</td>
+                            <td class="p">解封指數</td>
+                            <td class="p">14天平均新增確診數</td>
+                            <td class="p">交流距離</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-07</td>
+                            <td class="o">87,343,860</td>
+                            <td class="o">1,886,348</td>
+                            <td class="o">48,883,737</td>
+                            <td class="o">0.826</td>
+                            <td class="o">567957.00</td>
+                            <td class="o">4573980.08</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-06</td>
+                            <td class="o">87,195,614</td>
+                            <td class="o">1,883,915</td>
+                            <td class="o">48,785,537</td>
+                            <td class="o">0.827</td>
+                            <td class="o">605336.86</td>
+                            <td class="o">5036825.13</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-05</td>
+                            <td class="o">86,414,976</td>
+                            <td class="o">1,868,921</td>
+                            <td class="o">48,472,608</td>
+                            <td class="o">0.822</td>
+                            <td class="o">598980.57</td>
+                            <td class="o">4858337.73</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-04</td>
+                            <td class="o">85,681,051</td>
+                            <td class="o">1,853,487</td>
+                            <td class="o">48,156,281</td>
+                            <td class="o">0.819</td>
+                            <td class="o">592738.14</td>
+                            <td class="o">4713770.88</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-03</td>
+                            <td class="o">85,131,044</td>
+                            <td class="o">1,843,285</td>
+                            <td class="o">47,868,317</td>
+                            <td class="o">0.818</td>
+                            <td class="o">592168.93</td>
+                            <td class="o">4752045.93</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-02</td>
+                            <td class="o">84,595,827</td>
+                            <td class="o">1,835,938</td>
+                            <td class="o">47,603,180</td>
+                            <td class="o">0.817</td>
+                            <td class="o">592072.43</td>
+                            <td class="o">4810528.86</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-01-01</td>
+                            <td class="o">83,972,660</td>
+                            <td class="o">1,827,688</td>
+                            <td class="o">47,296,990</td>
+                            <td class="o">0.815</td>
+                            <td class="o">591595.14</td>
+                            <td class="o">4787362.54</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-12-31</td>
+                            <td class="o">87,343,860</td>
+                            <td class="o">1,886,348</td>
+                            <td class="o">48,883,737</td>
+                            <td class="o">0.826</td>
+                            <td class="o">567957.00</td>
+                            <td class="o">4573980.08</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-12-30</td>
+                            <td class="o">83,433,292</td>
+                            <td class="o">1,818,264</td>
+                            <td class="o">47,017,862</td>
+                            <td class="o">0.814</td>
+                            <td class="o">604331.57</td>
+                            <td class="o">4861138.66</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-12-29</td>
+                            <td class="o">82,717,058</td>
+                            <td class="o">1,805,155</td>
+                            <td class="o">46,739,262</td>
+                            <td class="o">0.809</td>
+                            <td class="o">605780.57</td>
+                            <td class="o">4759224.74</td>
+                        </tr>
+                        <tr>
+                            <td class="o">Total/Global</td>
+                            <td class="o">2021-12-28</td>
+                            <td class="o">81,960,265</td>
+                            <td class="o">1,790,058</td>
+                            <td class="o">46,356,551</td>
+                            <td class="o">0.808</td>
+                            <td class="o">604143.43</td>
+                            <td class="o">4607934.33</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="footer">
+                    <p style="color: rgb(141, 141, 141);font-size: 8px;padding-top: 20px;padding-bottom: 8px;">最後更新:2020/1/10</p>
+                    <a href="#fb"><img src="fb.png" height="25px" width="25px"></a>
+                    <a href="https://about.twitter.com/zh-tw.html"><img src="twitter.png" height="25px" width="25px"></a>
+                    <a href="https://github.com/maggie-zhuang/text"><img src="github.png" height="20px" width="20px"></a>
+                </div>
+            </center>
+        </div>
+    </div>
+    </body>
+</html>
