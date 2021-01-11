@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新冠肺炎</title>
+    <title>武漢肺炎</title>
     <link rel="icon" href="covid-19.ico" type="image/x-icon">
     <style>
         #dp{
             left: 0px;
-            width: 50%;
-            height: 0px;
+            width: 100%;
+            height: 30%;
         }
         #a1{
             align-content: center;
@@ -70,77 +70,77 @@
           height: 100%; /*外層高度100%*/
           margin: 0;
         }
-        #flex{
-            width: 98%;
-            padding-top: 1%;
-            padding-right: 1%;
-            padding-left: 1%;
-        }
     </style>
 </head>
 <body style="background-color:rgb(234, 234, 234); margin-top: 45px;">
+    <div style="position: fixed;bottom: 0px;right: 0px;z-index:99999;">
+        <a href="#"><img src="up.png"></a>
+    </div>
     <div id="wapper">
         <div id="content">
             <div id="u">
                 <ul>
                     <li><a href="hw07.html">COVID-19</a></li>
                     <li><a href="https://enwubaby.github.io/enwu/Taiwan1.html">Taiwan</a></li>
-                    <li><a href="#VR">Other</a></li>
+                    <li><a href="#VR">United Kingdom</a></li>
                     <li><a href="../index.html">Home</a></li>
                 </ul>
             </div>
-            <div id="flex">
-                <div>
-                    <div id="dp">
-                        <script>
-                            i = 0;
-                            HtmlStr = new Array(); 
-                            HtmlStr[0] = '<img src="Coronavirus1.jpg" height="450px">;2000'; 
-                            HtmlStr[1] = '<img src="Coronavirus2.jpg" height="450px">;2000'; 
-                            HtmlStr[2] = '<img src="Coronavirus3.jpg" height="450px">;2000';
-                            Max = HtmlStr.length-1;
-                            function star(Str){
-                              dp.innerHTML = Str;
-                              if(i < Max)
-                                  i++;
-                              else
-                                  i = 0;
-                              ToStop();
-                            }
-                            function ToPlay(){
-                              StrTmpe = HtmlStr[i].split(";");
-                              timeout = setTimeout("star(StrTmpe[0])",StrTmpe[1])
-                            }
-                            function ToStop(){
-                              clearTimeout(timeout);
-                              ToPlay();
-                            }
-                            ToPlay();
-                        </script>
-                    </div>
-                    <div style="position: relative;left: 825px;top: 0px;width: 45%;margin: 0px;height: 450px;">
-                        <p style="color:black;margin: 0px;text-align: center;font-size: 75px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">COVID-19</p>
-                        <p style="color: black;font-size: 20px;margin: 5px;">
-                            嚴重特殊傳染性肺炎疫情，是一次由嚴重急性呼吸道症候群冠狀病毒2型（SARS-CoV-2）的
-                            嚴重特殊傳染性肺炎（COVID-19）所引發的全球大流行疫情。疫情最初在2019年12月於中華人民
-                            共和國湖北省武漢市被發現，隨後在2020年初迅速擴散至全球多國，逐漸變成一場全球性大瘟疫。
-                            截至2021年1月9日，全球已有191個國家和地區累計報告逾0.89億名確診個案，其中逾191.6萬人因而
-                            死亡，是人類歷史上致死人數最多的流行病之一。世界各國對該病病死率的估計值差異甚大，截止
-                            2020年12月30日，多數國家該病的觀測病死率在0.5%-5.0%之間。目前研究表明，嚴重特殊傳染性肺炎
-                            最早可能於2019年10月至11月進入人類社會生活並開始傳播，而目前明確已知的
-                            首宗感染個案於2019年12月1日在武漢市發病。首位前往醫院就診的患者可能出現於12月12日。
-                            12月26日，武漢市呼吸與重症醫學科醫生張繼先最早發現和上報此不明原因肺炎，並懷疑該病屬傳染病。</p>
-                    </div>
-                </div>
+            <div id="dp">
+                <script>
+                    i = 0;
+                    HtmlStr = new Array(); 
+                    HtmlStr[0] = '<img src="Coronavirus1.jpg" width="100%" height="80%">;2000'; 
+                    HtmlStr[1] = '<img src="Coronavirus2.jpg" width="100%" height="80%">;2000'; 
+                    HtmlStr[2] = '<img src="Coronavirus3.jpg" width="100%" height="80%">;2000';
+                    Max = HtmlStr.length-1;
+                    function star(Str){
+                      dp.innerHTML = Str;
+                      if(i < Max)
+                          i++;
+                      else
+                          i = 0;
+                      ToStop();
+                    }
+                    function ToPlay(){
+                      StrTmpe = HtmlStr[i].split(";");
+                      timeout = setTimeout("star(StrTmpe[0])",StrTmpe[1])
+                    }
+                    function ToStop(){
+                      clearTimeout(timeout);
+                      ToPlay();
+                    }
+                    ToPlay();
+                </script>
             </div>
             <center>
-                <div style="position: relative; top: 8px;height: 285px;width: 100%;">
+            <div style="position: relative;top: 0px;width: 80%;height: 30%;">
+                <p style="color:black;margin: 0px;text-align: center;font-size: 80px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">COVID-19</p>
+                <p style="color: black;font-size: 25px;margin: 5px;text-align: left;">
+                    嚴重特殊傳染性肺炎疫情，是一次由嚴重急性呼吸道症候群冠狀病毒2型的
+                    嚴重特殊傳染性肺炎（COVID-19）所引發的全球大流行疫情。疫情最初在2019年12月於中華人民
+                    共和國湖北省武漢市被發現，隨後在2020年初迅速擴散至全球多國，逐漸變成一場全球性大瘟疫。
+                    截至2021年1月9日，全球已有191個國家和地區累計報告逾0.89億名確診個案，其中逾191.6萬人因而
+                    死亡，是人類歷史上致死人數最多的流行病之一。世界各國對該病病死率的估計值差異甚大，截止
+                    2020年12月30日，多數國家該病的觀測病死率在0.5% - 5.0%之間。目前研究表明，嚴重特殊傳染性肺炎
+                    最早可能於2019年10月至11月進入人類社會生活並開始傳播，而目前明確已知的
+                    首宗感染個案於2019年12月1日在武漢市發病。首位前往醫院就診的患者可能出現於12月12日。</p>
+            </div>
+                <div style="position: relative; top: 8px;height: 45%;width: 100%;">
                     <a href="https://covid-19.nchc.org.tw/"><img src="list.png" width="45%" left="0px"></a>
-                    <a href="https://covid-19.nchc.org.tw/"><img src="list2.png" width="45%" ></a>
+                    <a href="https://covid-19.nchc.org.tw/"><img src="list2.png" width="45%"></a>
                 </div>
-                <div style="color: black;font-size: 35px;font-family: 微軟正黑體;"><p style="margin-top: 5px;margin-bottom: 5px;">COVID-19 疫情紀錄表單</p></div>
-                <div style="width: 60%;padding-left: 5%;padding-right: 5%;padding-top: 10px;padding-bottom: 10px;">
-                    <table border="1" align="center" cellpadding="10" cellspacing="0">
+                <div style="color: black;font-size: 35px;font-family: 微軟正黑體;position: relative;"><p style="margin-top: 5px;margin-bottom: 5px;">COVID-19 疫情紀錄表單</p></div>
+                <script>
+                    function getrow(obj){
+                        if(event.srcElement.tagName=="TD"){
+                        curRow=event.srcElement.parentElement;
+                        alert("這是第"+(curRow.rowIndex+1)+"行");
+                        }
+                    }
+                </script>                    
+                <div style="width: 60%;padding-left: 5%;padding-right: 5%;padding-top: 10px;padding-bottom: 10px;position: relative;">
+                    <table border="1" align="center" cellpadding="10" cellspacing="0" onclick=getrow(this)>
                         <tr style="background-color: lightslategrey;">
                             <td class="p">國家</td>
                             <td class="p">檢核日期'</td>
@@ -263,12 +263,47 @@
                         </tr>
                     </table>
                 </div>
+                <div style="color: black;;font-family: 微軟正黑體;position: relative;width: 60%;">
+                    <p style="margin-top: 5px;margin-bottom: 5px;font-size: 35px;">影響</p>
+                    <p style="text-align: left;font-size: 30px;margin-top: 15px;margin-bottom: 15px;">經濟：</p>
+                    <p style="text-align: left;font-size: 20px;margin-top: 10px;margin-bottom: 10px;">
+                        <img src="picture1.jpg" style="width:200px; height:125px ;float: right;">
+                        疫情是對全球經濟的重大破壞穩定的威脅。經濟學人智庫的阿加特·德馬萊斯（Agathe Demarais）預測，
+                        市場將保持波動，直到潛在結果的清晰形像出現。來自聖路易斯華盛頓大學的專家的一項估計對全球供應鏈
+                        產生了超過$3000億美元的影響，這種影響可能持續長達兩年。由於中國境外COVID-19個案數量大幅增加，
+                        全球股票市場在2月24日下跌。</p>
+                    <p style="text-align: left;font-size: 30px;margin-top: 15px;margin-bottom: 15px;">供應短缺：</p>
+                    <p style="text-align: left;font-size: 20px;margin-top: 10px;margin-bottom: 10px;">
+                        <img src="picture2.jpg" style="width:200px; height:132px ;float: right;">
+                        疫情被歸咎於若干供應短缺的情況，這是由於在全球範圍內使用更多的設備來抗擊疫情，恐慌性購買
+                        （在某些地方導致貨架上的食品，衛生紙和瓶裝水等雜貨必需品被清空），以及工廠和物流運作的中斷。
+                        恐慌性購買的蔓延已經被發現源於感知到的威脅，已經感知到的稀缺性，對未知事物的恐懼，應對行為和社會心理因素
+                        （例如社會影響和信任）。尤其是技術行業，已警告電子商品的運輸延遲。據世衛組織總幹事譚德塞稱，
+                        對個人防護設備的需求已增長了一百倍，導致價格上漲到正常價格的二十倍，並且還拖延了四到六個月的醫療用品供應。
+                        它還造成了全球個人防護裝備的短缺，世界衛生組織警告說，這將危及衛生工作者。</p>
+                        <p style="text-align: left;font-size: 30px;margin-top: 15px;margin-bottom: 15px;">石油和其他能源市場：</p>
+                        <p style="text-align: left;font-size: 20px;margin-top: 10px;margin-bottom: 10px;">
+                            <img src="picture3.jpg" style="width:200px; height:119.5px ;float: right;">
+                            到2020年2月上旬，由於中國需求下降，石油價格急劇下跌之後，石油輸出國組織（簡稱：歐佩克，OPEC）陷入困境。
+                            在4月20日星期一，西德克薩斯中質油（WTI）的價格下跌，跌至紀錄低點（每桶負$37.63美元），原因是交易商減持庫存，
+                            以免取貨並招致倉儲成本。6月價格下跌，但在正區間內，每桶西德克薩斯原油交易價格高於$20美元。
+                        </p>
+                </div>
                 <div id="footer">
-                    <p style="color: rgb(141, 141, 141);font-size: 8px;padding-top: 20px;padding-bottom: 8px;">最後更新:2020/1/10</p>
+                    <p style="color: rgb(141, 141, 141);font-size: 8px;padding-top: 20px;padding-bottom: 8px;">
+                        <marquee direction="right" height="18px" scrollamount="5" behavior="alternate">
+                            <script language="Javascript">
+                                var dateModified = document.lastModified;
+                                mydate = dateModified.slice(0,10);
+                                document.write("<b>最後更新: " + mydate + "</b>");
+                                </script>
+                        </marquee>
+                    </p>
                     <a href="#fb"><img src="fb.png" height="25px" width="25px"></a>
                     <a href="https://about.twitter.com/zh-tw.html"><img src="twitter.png" height="25px" width="25px"></a>
-                    <a href="https://github.com/maggie-zhuang/text"><img src="github.png" height="20px" width="20px"></a>
+                    <a href="https://github.com/maggie-zhuang/text"><img src="github.png" height="25px" width="25px"></a>
                 </div>
+                
             </center>
         </div>
     </div>
